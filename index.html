@@ -1,14 +1,23 @@
 <!doctype html>
 <html>
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB41HH6X9E"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZB41HH6X9E');
+    window.dataLayer = window.dataLayer || [];
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P83MV93F');</script>
+    <!-- End Google Tag Manager -->
+<script>
+    function push() {
+        window.dataLayer.push({
+            'event': 'dataLayerTest',
+            'value': document.querySelector("#gaTestInput").value
+        })
+    }
 </script>
 <!-- 애널리틱스는 같은 기기로 접속하면 방문자로 치지 않는다;; -->
     <title>웹사이트를 직접 만들어보자</title>
@@ -17,7 +26,11 @@
 
 <body>
     <h1><a href="index.html">웹사이트</h1></a>
-
+    <div>
+        <h1>ga4 테스트</h1>
+        <input type="text" id="gaTestInput">
+        <input type="button" onclick="push()">
+    </div>
     <ul>
         <li><a href="네이버 설명.html">네이버</a></li>
         <li><a href="다음 설명.html">다음</a></li>
