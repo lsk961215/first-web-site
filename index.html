@@ -1,34 +1,20 @@
 <!doctype html>
 <html>    
 <head>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function push() {
-            dataLayer.push({
-                'event': 'dataLayerTest',
-                'test.value': '123123'
-            })
-    
-            alert('전송완료')
-        }
-    </script>    
-    <!-- Google Tag Manager -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P83MV93F');</script>
-    <!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GP1VWT5NQC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GP1VWT5NQC');
+</script>
 <!-- 애널리틱스는 같은 기기로 접속하면 방문자로 치지 않는다;; -->
     <title>웹사이트를 직접 만들어보자</title>
     <meta charset="utf-8">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P83MV93F"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <h1><a href="index.html">웹사이트</h1></a>
     <div>
         <h1>ga4 테스트</h1>
