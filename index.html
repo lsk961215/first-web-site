@@ -15,7 +15,9 @@
     <title>웹사이트를 직접 만들어보자</title>
     <meta charset="utf-8">
     <script>
-        dataLayer.push({'event': 'customEvent111', 'customEventValue': '123123123123222'});
+        function push(){
+            dataLayer.push({'event': 'customEvent111', 'customEventValue': '123123123123222'});
+        }
     </script>
 </head>
 <body>
@@ -27,7 +29,7 @@
     <div>
         <h1>ga4 테스트</h1>
         <input type="text" id="gaTestInput">
-        <input type="button" id="gaTestButton">
+        <input type="button" id="gaTestButton" onclick="push()">
     </div>
     <ul>
         <li><a href="네이버 설명.html">네이버</a></li>
