@@ -16,7 +16,8 @@
     <meta charset="utf-8">
     <script>
         function push(){
-            dataLayer.push({'event': 'customEvent111', 'customEventValue': document.querySelector("#gaTestInput")});
+            
+            dataLayer.push({'event': 'customEvent111', 'customEventValue': document.querySelector("#gaTestInput").value});
         }
     </script>
 </head>
